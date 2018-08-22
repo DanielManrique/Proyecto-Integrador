@@ -39,11 +39,11 @@ const pwa = () => {
   if ('serviceWorker' in navigator && 'SyncManager' in window) {
     let func = function registerGBSync () {
       navigator.serviceWorker.ready
-      .then(registration => {
-        return registration.sync.register('github')
-          .then(() => console.log('Sincronizacion de fondo registrada'))
-          .catch(err => console.log('Fallo la sincronizacion de fondo', err))
-      })
+        .then(registration => {
+          return registration.sync.register('github')
+            .then(() => console.log('Sincronizacion de fondo registrada'))
+            .catch(err => console.log('Fallo la sincronizacion de fondo', err))
+        })
     }
     func()
   }

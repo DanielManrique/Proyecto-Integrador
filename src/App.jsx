@@ -87,8 +87,8 @@ export default class App extends Component {
                     }}
                     className='menu__logout'
                     >
-                    {' '}Salir{' '}
-                  </Link>{' '}
+                      Salir
+                    </Link>
                 </li>
               </Fragment>
               : <Fragment />}

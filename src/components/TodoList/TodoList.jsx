@@ -73,10 +73,10 @@ export default class TodoList extends Component {
         <ul className='todo__list' >
           {
             this.state.todos.length
-            ? this.state.todos.map(todo => (
-              <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
-            ))
-            : <p>No hay tareas agregadas!</p>
+              ? this.state.todos.map(todo => (
+                <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
+              ))
+              : <p>No hay tareas agregadas!</p>
           }
         </ul>
       </div>
